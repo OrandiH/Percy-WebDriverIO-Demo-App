@@ -21,6 +21,7 @@ nav,
 section,
 summary {
   display: block;
+  align-content: center;
 }
 audio,
 canvas,
