@@ -4,14 +4,20 @@ import tw from "tailwind.macro"
 
 
 const BottomContainer = styled.div`
-  ${tw`bg-red-300 h-16 p-4 inset-x-0 bottom-0 w-full overflow-hidden fixed text-center mt-px`};
+  ${tw`bg-teal-400 h-16 p-4 inset-x-0 bottom-0 w-full overflow-hidden relative text-center mt-px`};
+`
+
+const Text = styled.p`
+  ${tw`text-white text-2xl`};
 `
 
 const Footer = () => (
   <BottomContainer>
-        © {new Date().getFullYear()}, Built with
+        <Text>
+          © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </Text>
   </BottomContainer>
 )
 
