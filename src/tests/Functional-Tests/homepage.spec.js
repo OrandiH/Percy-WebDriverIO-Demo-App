@@ -11,7 +11,9 @@ describe('Demo Site - Homepage - Functional UI tests', () => {
     });
 
     it('should load the home page and assert that the Youtube iframe is present', () => {
-        const YTIframe = $('')
+        const YTIframe = $('#youTubeVideoFrame');
+        browser.switchToFrame(YTIframe);
+        expect(YTIframe.isDisplayed()).to.be.equal(true);
     });
 
 });

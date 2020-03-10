@@ -47,7 +47,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "wdio wdio.conf.js --spec ./src/tests/Functional-Tests/homepage.spec.js"
   },
   "repository": {
     "type": "git",
