@@ -51,7 +51,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "wdio wdio.conf.js --spec ./src/tests/Functional-Tests/homepage.spec.js"
+    "test": "wdio wdio.conf.js --spec ./src/tests/Functional-Tests/homepage.spec.js",
+    "visual-test":"percy exec -- wdio wdio.conf.js --spec ./src/tests/Visual-Tests/homepage-visual.spec.js"
   },
   "repository": {
     "type": "git",
