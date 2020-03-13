@@ -35,6 +35,7 @@
     "@wdio/mocha-framework": "^5.18.7",
     "@wdio/spec-reporter": "^5.18.7",
     "@wdio/sync": "^5.18.7",
+    "babel-preset-gatsby": "^0.2.35",
     "chai": "^4.2.0",
     "chromedriver": "^80.0.1",
     "prettier": "^1.19.1",
@@ -52,7 +53,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "wdio wdio.conf.js --spec ./src/tests/Functional-Tests/homepage.spec.js",
-    "visual-test":"percy exec -- wdio wdio.conf.js --spec ./src/tests/Visual-Tests/homepage-visual.spec.js"
+    "visual-test": "percy exec -- wdio wdio.conf.js --spec ./src/tests/Visual-Tests/homepage-visual.spec.js"
   },
   "repository": {
     "type": "git",

@@ -4,6 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import styled from 'styled-components'
+import tw from "tailwind.macro"
+
+const ButtonComponent = styled.button`
+  ${tw`text-white bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded-full`};
+`
 
 const IndexPage = () => (
   <Layout>
@@ -19,7 +25,7 @@ const IndexPage = () => (
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <ButtonComponent><Link to="/page-2/">Go to page 2</Link></ButtonComponent>
   </Layout>
 )
 
