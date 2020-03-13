@@ -10,6 +10,6 @@ describe('Demo Site - Homepage - Visual UI tests', () => {
     });
     // Test case
     it('should load the homepage and take a screenshot', async () => {
-        await percySnapshot(browser, 'Home page screenshot');
+        await percySnapshot(browser, 'Home page screenshot', {widths: [1200, 992]});
     });
 });
