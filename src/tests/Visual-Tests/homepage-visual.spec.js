@@ -9,7 +9,12 @@ describe('Demo Site - Homepage - Visual UI tests', () => {
         browser.url('https://nifty-bell-cda939.netlify.com/');
     });
     // Test case
-    it('should load the homepage and take a screenshot', async () => {
-        await percySnapshot(browser, 'Home page screenshot', {widths: [1200, 992]});
+    // it('should load the homepage and take a screenshot', async () => {
+    //     await percySnapshot(browser, 'Home page screenshot', {widths: [1200, 992]});
+    // });
+
+    // Test case
+    it('should load the homepage, ignore the iframe and take a screenshot', async () => {
+        await percySnapshot(browser, 'Home page screenshot', {percyCSS: `#youTubeVideoFrame { display: none; }`});
     });
 });
