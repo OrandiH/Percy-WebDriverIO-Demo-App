@@ -2,19 +2,23 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height:100%;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom:60px;
+  padding:0;
+  height:100%;
 }
 article,
 aside,
 details,
 figcaption,
 figure,
-footer,
 header,
+footer,
 main,
 menu,
 nav,

@@ -4,7 +4,7 @@ import tw from "tailwind.macro"
 
 
 const BottomContainer = styled.div`
-  ${tw`bg-teal-400 h-16 p-4 inset-x-0 bottom-0 w-full overflow-hidden relative text-center mt-px`};
+  ${tw`bg-teal-400 h-12 p-4 inset-x-0 bottom-0 w-full overflow-hidden relative text-center mt-px`};
 `
 
 const Text = styled.p`
