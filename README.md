@@ -5,8 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby sample project with Percy.io
 </h1>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d4b942d-1cd7-4751-b4b9-b9b11ae38903/deploy-status)](https://app.netlify.com/sites/nifty-bell-cda939/deploys)
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 

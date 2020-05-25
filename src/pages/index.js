@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import tw from "tailwind.macro"
 
 const ButtonComponent = styled.button`
-  ${tw`text-white bg-red-800 hover:bg-blue-700 font-bold py-2 px-4 rounded-full`};
+  ${tw`text-white bg-green-800 hover:bg-blue-700 font-bold py-2 px-4 rounded-full`};
 `
 
 const IndexPage = () => (
