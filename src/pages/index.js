@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -20,12 +19,14 @@ const IndexPage = () => (
       <Image />
     </div>
     <div>
-    <iframe id="youTubeVideoFrame" title="WebCraftConf Video" width="560" height="315" src="https://www.youtube.com/embed/iW-af6bvnDk" 
+    <iframe id="youTubeVideoFrame" title="Geekle.us Video" width="560" height="315" src="https://www.youtube.com/embed/ws22JptNuqI" 
     frameborder="0" 
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
     </div>
-    <ButtonComponent><Link to="/page-2/">Go to page 2</Link></ButtonComponent>
+    <ButtonComponent>
+      <a href="https://webdriver.io/" target="_blank" rel="noopener noreferrer">Go to WebDriverIO main page</a>
+    </ButtonComponent>
   </Layout>
 )
 
