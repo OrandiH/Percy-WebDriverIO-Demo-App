@@ -13,6 +13,10 @@ describe('Demo Site - Homepage - Visual UI tests', () => {
         await percySnapshot(browser, 'Home page screenshot', {widths: [1200, 992]});
     });
 
+    // it('should load the homepage and take a screenshot', async () => {
+    //     await percySnapshot(browser, 'Home page screenshot minus iframe', { percyCSS: '#youTubeVideoFrame { display: none; }'});
+    // });
+
     // it('should take a screenshot', () => {
     //     browser.call( async () => {
     //         const res = await percySnapshot(browser, 'Home page screenshot 2', { widths: [1200, 992] });
