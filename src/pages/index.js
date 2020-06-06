@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import tw from "tailwind.macro"
 
 const ButtonComponent = styled.button`
-  ${tw`text-white bg-green-700 hover:bg-blue-700 font-bold py-2 px-4 rounded-full`};
+  ${tw`text-white bg-green-900 hover:bg-blue-700 font-bold py-2 px-4 rounded-full`};
 `
 
 const IndexPage = () => (
@@ -15,7 +15,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} className="main-container">
       <Image />
     </div>
     <div>
