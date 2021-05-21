@@ -25,7 +25,7 @@ const IndexPage = () => (
     </iframe>
     </div>
     <ButtonComponent>
-      <a href="https://webdriver.io/" target="_blank" rel="noopener noreferrer">Go To WebDriverIO main page</a>
+      <a href="https://webdriver.io/" target="_blank" rel="noopener noreferrer">Go to WebDriverIO main page</a>
     </ButtonComponent>
   </Layout>
 )
