@@ -13,7 +13,7 @@ const ButtonComponent = styled.button`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>HI peopleS</h1>
+    <h1>HI peopleSs</h1>
     <p>Welcome to your new Gatsby site.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} className="main-container">
       <Image />
