@@ -9,7 +9,8 @@ exports.config = {
     runner: 'local',
     //
     // Override default path ('/wd/hub') for chromedriver service.
-    path: '/',
+    //path: '/',
+    path: '/C:/Users/sundarrajm/Documents/GitHub/Percy-WebDriverIO-Demo-App/node_modules/chromedriver/lib/chromedriver/chromedriver.exe',
     //
     // ==================
     // Specify Test Files
@@ -50,12 +51,15 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
+    
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
         maxInstances: 5,
         //
+        //browserName: 'ie',
         browserName: 'chrome',
+        // browserName: 'chrome', browserVersion: '83.0' 
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -92,7 +96,9 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://nifty-bell-cda939.netlify.com/',
+    // baseUrl: 'http://localhost',
+    // baseUrl: 'https://nifty-bell-cda939.netlify.com/',
+    baseUrl: 'https://nifty-bell-cda940.netlify.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -108,6 +114,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
+    //services: ['iedriver'],
     services: ['chromedriver'],
     
     // Framework you want to run your specs with.
@@ -164,12 +171,8 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-    before: function (capabilities, specs) {
-        // Import percySnapshot function
-        const { percySnapshot } = require('@percy/webdriverio');
-        // Make percySnapshot available as a global variable in all wdio tests
-        global.percySnapshot = percySnapshot;
-    },
+    // before: function (capabilities, specs) {
+    // },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name

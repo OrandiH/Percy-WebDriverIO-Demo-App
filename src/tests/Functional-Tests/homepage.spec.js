@@ -2,11 +2,13 @@
 import { expect } from 'chai';
 
 // Test suite
+// driver = webdriver.chrome('C:\Users\sundarrajm\Documents\GitHub\Percy-WebDriverIO-Demo-App\node_modules\chromedriver\lib\chromedriver\chromedriver.exe')
 describe('Demo Site - Homepage - Functional UI tests', () => {
     // Before each test, do the following
     beforeEach(() => {
         browser.maximizeWindow();
-        browser.url('https://nifty-bell-cda939.netlify.com/');
+        browser.url('https://nifty-bell-cda940.netlify.com/');
+    //    browser.url('https://nifty-bell-cda939.netlify.com/');
     });
 
     // Test case
